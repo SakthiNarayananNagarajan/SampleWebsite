@@ -1,0 +1,42 @@
+﻿
+@{
+	ViewBag.Title = "CarrerIndex";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-grid.min.css.map" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-reboot.min.css.map" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css.map" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/popper-utils.min.js"></script>
+<script src="~/Scripts/popper.min.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<div class=" container">
+	<div class="row">
+		<div class="col-xl-12 " >
+			<ul class="nav nav-pills">
+				<li class="nav-item active">
+					<a class="nav-link active" data-toggle="tab" href="#RGStab">Rgs</a>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#MCtab">MC</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="RGStab" class="container tab-pane active">
+					@RenderPage("~/Views/Career/RGS.cshtml")
+				</div>
+				<div id="MCtab" class="container tab-pane">
+					@RenderPage("~/Views/Career/MC.cshtml")
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+﻿
+@{
+	ViewBag.Title = "Mainpage";
+}
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-grid.min.css.map" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-reboot.min.css.map" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css.map" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/popper-utils.min.js"></script>
+<script src="~/Scripts/popper.min.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<div class=" container">
+	<div class="row">
+		<div class="col-md-8">
+			<ul class="nav nav-tabs">
+				<li class="nav-item active">
+					<a class="nav-link active" href="#triangle" data-toggle="tab">Triangle</a>
+				<li class="nav-item ">
+					<a class="nav-link" href="#cube" data-toggle="tab">Cube</a>
+				</li>
+			</ul>
+			<div class="tab-content nav-tabs-justified">
+				<div id="triangle" class="tab-pane active">
+					@RenderPage("~/Views/Default/Triangle.cshtml")
+				</div>
+				<div id="cube" class="tab-pane">
+					@RenderPage("~/Views/Default/Cube.cshtml")
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

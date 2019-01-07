@@ -1,0 +1,40 @@
+﻿
+@{
+	ViewBag.Title = "SocialIndex";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-grid.min.css.map" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap-reboot.min.css.map" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css.map" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/popper-utils.min.js"></script>
+<script src="~/Scripts/popper.min.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<div class=" container">
+	<div class="row">
+		<div class="col-md-8">
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a class="nav-link active" href="#SPI" data-toggle="tab">SPI</a>
+				<li>
+					<a class="nav-link" href="#Ethel" data-toggle="tab">Ethel</a>
+				</li>
+			</ul>
+			<div class="tab-content nav-tabs-justified">
+				<div id="SPI" class="tab-pane active">
+					@RenderPage("~/Views/Social/SPI.cshtml")
+				</div>
+				<div id="Ethel" class="tab-pane">
+					@RenderPage("~/Views/Social/Ethel.cshtml")
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
