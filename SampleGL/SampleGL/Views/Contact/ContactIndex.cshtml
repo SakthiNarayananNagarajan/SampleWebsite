@@ -1,0 +1,49 @@
+﻿
+@{
+	ViewBag.Title = "SendEmail";
+}
+
+<div class=" navbar nav-justified">
+	<span class="navbar-left">Phone No - <strong> 9952279461 </strong> </span>
+	<span class="navbar-right">Email Id - <strong> narayanansakthi1992@gmail.com </strong> </span>
+	<br>
+</div>
+
+<div class="bg-primary col-lg-12">
+	<h6 class="h4"> <strong>Feedback </strong></h6>
+
+	@if (ViewBag.Error != null)
+	{
+		<h2> @ViewBag.Error </h2>
+	}
+
+	<form method="post" action="SendEmail">
+
+		<div class="container col-lg-12 col-md-12 col-sm-12">
+			<div class=" form-row ">
+				<div class="form-control-static col-lg-4 col-md-12 col-sm-12">
+					<strong>Name:</strong>
+					<input class="form-control navbar-expand-md navbar-expand-lg" style="width:300px" type="text" name="name" />
+				</div> <hr />
+
+				<div class="form-control-static col-lg-4 col-md-12 col-sm-12">
+					<strong>Phone no:</strong>
+					<input class="form-control navbar-expand-md navbar-expand-lg" style="width:300px" type="text" name="phone_no" />
+				</div>  <hr />
+
+				<div class="form-control-static col-lg-4 col-md-12 col-sm-12">
+					<strong>Email ID:</strong>
+					<input class="form-control navbar-expand-md navbar-expand-lg" style="width:300px" type="text" name="emailid" />
+				</div> <br />
+			</div>
+
+			<span class="form-control-static"> <strong> Message:</strong> </span>
+			<input class="form-control col-lg-12" style="height:100px" type="text" name="message" /> <br />
+
+			<input class="btn btn-primary" type="submit" value="Send" />
+
+		</div>
+
+	</form>
+
+</div>
